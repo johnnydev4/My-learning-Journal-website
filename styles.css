@@ -1,21 +1,17 @@
 body{
-    background-color:whitesmoke;
-    width: 414px;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #202020;
 
-    
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    background-color: #202020;
 }
 
 header{
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 21px 24px 21px 20px;
+    padding: 1.3125rem 1.5rem 1.3125rem 1.25rem;
     background-color: white;
 }
 
@@ -25,30 +21,28 @@ nav, a, .logo{
     list-style: none;
     text-decoration: none;
     align-items: center;
-    
 }
 
 .logo{
     font-family: "Roboto", sans-serif;
     font-weight: bold;
-    font-size: 13.55px;
+    font-size: 0.8469rem;
     letter-spacing: -0.03em;
     color: #0E0E0E;
     display: flex;
- 
 }
 
 nav, a{
-     font-family: "Source Sans 3", sans-serif;
-    font-size: 12px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 0.75rem;
     font-weight: 600;
-    gap: 31px;
+    gap: 1.9375rem;
     color: #090909;
 }
 
 header img{
-background-color: #0E0E0E;
-object-fit: cover;
+    background-color: #0E0E0E;
+    object-fit: cover;
 }
 
 /* Hero section */
@@ -56,17 +50,17 @@ object-fit: cover;
 .hero{
     background-image: url("images/hero.jpg");
     background-size: cover;
-     background-position: center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    width: 414px;
-    height: 292px;
-    padding: 87px 20px 25px 20px;
+    justify-content: flex-end;
+    width: 25.875rem;
+    height: 18.25rem;
+    padding: 5.4375rem 1.25rem 1.5625rem 1.25rem;
     box-sizing: border-box;
-    gap: 8px;
-    margin-bottom: 34px;
+    gap: 0.5rem;
+    margin-bottom: 2.125rem;
 }
 
 .hero .subtext, h1, p, .date{
@@ -75,38 +69,36 @@ object-fit: cover;
     margin: 0;
 }
 
-
 .hero .subtext{
-font-size: 16px;
-font-weight: 400;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 .hero .date{
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 400;
 }
 
 .hero h1{
-     font-size: 32px;
-     font-weight: bold;
-     line-height: 1.082em;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.082em;
 }
 
 .hero p{
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Grid */
 
 main{
     background-color: white;
-
 }
 
 .blog-grid{
     display: grid;
+    justify-content: center;
 }
-
 
 /* quitar margen texto de cards */
 .card h2, p{
@@ -117,37 +109,36 @@ main{
     display: flex;
     flex-direction: column;
     font-family: "Source Sans 3", sans-serif;
-    gap: 8px;
     box-sizing: border-box;
-    margin-bottom: 41px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 2.5625rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
 }
 
 .card img{
     object-fit: cover;
+    margin-bottom: 8px;
 }
 
 .card .date{
-    font-size: 14.17px;
-    margin-top: 14px;
+    font-size: 0.8856rem;
+    margin-top: 0.875rem;
     box-sizing: border-box;
     color: #000000;
     font-weight: 400;
 }
 
 .card h2{
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 1.082em;
     font-weight: bold;
-   
 }
 
 .card .subtext{
-font-size: 16px;
-font-weight: 400;
-color: #505050;
-line-height: 1.25em;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #505050;
+    line-height: 1.25em;
 }
 
 /* view more btn */
@@ -156,17 +147,16 @@ line-height: 1.25em;
     font-family: "Source Sans 3";
     color: #000000;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: underline;
     cursor: pointer;
     display: flex;
-    margin-top: -14px;
+    margin-top: -0.875rem;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 43px;
+    padding-bottom: 2.6875rem;
     border: none;
     background: none;
-   
 }
 
 /* footer */
@@ -176,12 +166,11 @@ footer{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 105px;
-
+    height: 6.5625rem;
 }
 
 footer p{
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #ececec;
     font-weight: bold;
     line-height: 1.082em;
@@ -192,4 +181,93 @@ footer span{
     font-weight: 400;
     line-height: 1.25em;
 }
+
+/* Desktop screen size */
+
+
+
+@media (min-width: 1080px){
+    body{
+        background-color: #000000;
+        max-width: 1085px;
+    }
+
+
+/* texto nav */
+
+    nav a{
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1rem;
+    }
+
+    .logo{
+        font-size: 1.2525rem;
+    }
+
+    .logo img{
+        height: 2.140625rem;
+        width: 2.140625rem;
+    }
+
+/* texto hero */
+    .hero{
+        width: 1085px;
+        height: 488px;
+        padding: 0 0 3.7043rem 3.3125rem
+        
+    }
+
+    .hero .inner-text{
+     width: 657px;
+    }
+
+    .hero .date{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5625rem;
+    }
+
+    .hero h1{
+    font-size: 2.5rem;
+    letter-spacing: -0.03em;
+   margin-bottom: 0.6081rem;
+    }
+
+   .hero .subtext{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3.704375rem;
+    }
+
+    .hero{
+        margin-bottom: 0px;
+    }
+
+/* grid template */
+
+
+.blog-grid{
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    box-sizing: border-box;
+    padding: 53px 53px 46px 53px;
+    row-gap: 26px;
+
+
+    }
+
+    .card{
+        width: 309px;
+        height: 393px;
+        
+    }
+
+    .card img{
+        width: 100%;
+    }
+
+}
+
+   
 
