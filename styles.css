@@ -117,7 +117,8 @@ main{
 
 .card img{
     object-fit: cover;
-    margin-bottom: 8px;
+    border-radius: 5%;
+    
 }
 
 .card .date{
@@ -147,16 +148,21 @@ main{
     font-family: "Source Sans 3";
     color: #000000;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.885625rem;
     text-decoration: underline;
     cursor: pointer;
     display: flex;
-    margin-top: -0.875rem;
+    margin-top: -2.875rem;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2.6875rem;
     border: none;
     background: none;
+}
+
+.view-more:hover{
+    transform: scale(1.04);
+    color: #505050;
 }
 
 /* footer */
@@ -167,6 +173,9 @@ footer{
     align-items: center;
     text-align: center;
     height: 6.5625rem;
+
+    
+
 }
 
 footer p{
@@ -174,6 +183,7 @@ footer p{
     color: #ececec;
     font-weight: bold;
     line-height: 1.082em;
+    
 }
 
 footer span{
@@ -200,6 +210,11 @@ footer span{
     font-size: 1rem;
     }
 
+    nav a:hover{
+        transform: scale(1.03);
+        color:#505050;
+    }
+
     .logo{
         font-size: 1.2525rem;
     }
@@ -213,12 +228,23 @@ footer span{
     .hero{
         width: 1085px;
         height: 488px;
-        padding: 0 0 3.7043rem 3.3125rem
+        padding: 0 0 3.7043rem 3.3125rem;
         
     }
 
     .hero .inner-text{
-     width: 657px;
+     /* width: 657px; */
+     height: 10rem;
+     width: 41.0625rem;
+     padding: 0.625em;
+
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* necesario para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     }
 
     .hero .date{
@@ -230,8 +256,16 @@ footer span{
     .hero h1{
     font-size: 2.5rem;
     letter-spacing: -0.03em;
-   margin-bottom: 0.6081rem;
+    margin-bottom: 0.6081rem;
+    color: gradient() ;
     }
+
+    .gradient-text {
+    background: linear-gradient(90deg, orange, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
    .hero .subtext{
     font-size: 1rem;
@@ -265,7 +299,32 @@ footer span{
 
     .card img{
         width: 100%;
+        min-height: 232px;
     }
+
+    .card img:hover{
+        transform: scale(1.01);
+    }
+
+
+/* card text */
+
+.card .date{
+    font-size: 0.875rem;
+    margin-top: 0.875rem;
+    margin-bottom: 14px;
+  
+}
+
+.card h2{
+    margin-bottom: 9px;
+}
+
+.card .subtext{
+  
+}
+
+
 
 }
 
