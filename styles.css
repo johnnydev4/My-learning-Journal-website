@@ -6,6 +6,8 @@ body{
     background-color: #202020;
 }
 
+/* smartphone version */
+
 header{
     display: flex;
     justify-content: space-between;
@@ -124,6 +126,7 @@ main{
 .card .date{
     font-size: 0.8856rem;
     margin-top: 0.875rem;
+    margin-bottom: 0.5625rem;
     box-sizing: border-box;
     color: #000000;
     font-weight: 400;
@@ -133,6 +136,7 @@ main{
     font-size: 1.5rem;
     line-height: 1.082em;
     font-weight: bold;
+    margin-bottom: 0.5625rem;
 }
 
 .card .subtext{
@@ -152,7 +156,7 @@ main{
     text-decoration: underline;
     cursor: pointer;
     display: flex;
-    margin-top: -2.875rem;
+    margin-top: -0.7em;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 2.6875rem;
@@ -192,9 +196,60 @@ footer span{
     line-height: 1.25em;
 }
 
+/* hero.html */
+.recent-posts{
+    color: #000000;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.6875rem;
+
+}
+
+.mobile-break{
+    display: inline;
+}
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.25rem 3.1875rem 1.25rem;
+}
+
+.blog, p, h1{
+    color: #151515;
+    margin: 0;
+}
+
+.blog p span{
+    font-weight: bold;
+}
+
+.blog h1{
+    line-height: 1.082em;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom:1.4rem;
+    letter-spacing: -0.03em;
+    
+}
+
+
+.blog .date{
+    color: #151515;
+    font-weight: 400;
+    font-size: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog img{
+    object-fit: cover;
+    border-radius: 5%;
+    margin: 2.1875rem 0;
+}
+
+
 /* Desktop screen size */
-
-
 
 @media (min-width: 1080px){
     body{
@@ -277,6 +332,46 @@ footer span{
         margin-bottom: 0px;
     }
 
+
+    /* hero.html */
+
+    .blog{
+        padding: 154px 122px 0 121px ;
+    }
+
+    .mobile-break{
+        display: none;
+    }
+
+    .blog .date{
+        font-size: 1rem;
+        color: #151515;
+        margin-bottom: 24px;
+
+    }
+
+    .blog h1{
+        font-size: 36px;
+        line-height: 1.082em;
+        letter-spacing: -0.03em;
+        margin-bottom: 27px;
+    }
+
+    .blog p{
+        font-size: 1rem;
+        
+    }
+
+    .blog img{
+        width: 979px;
+        height: 488px;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        
+     
+    }
+
 /* grid template */
 
 
@@ -324,7 +419,9 @@ footer span{
   
 }
 
-
+.view-more{
+    margin-top: -2.875rem;
+}
 
 }
 
