@@ -1,5 +1,13 @@
 import blogs from "./data.js"
 
+// redirect when nav btns clicked
+document.getElementById("hero-redirect").addEventListener("click", function(e){
+    window.location.href = "hero.html"; 
+    renderGrid(blogs.slice(0, 3))
+});
+
+
+
 // add 3 more blogs to dom
 document.getElementById("view-btn").addEventListener("click", function(e){
     document.querySelector(".view-more").remove()
@@ -27,5 +35,12 @@ const html = data.map(function(card){
 document.getElementById("blog-grid").innerHTML = html 
 }
 
-renderGrid(blogs.slice(0,6))
+
+if (document.body.classList.contains("hero-html")) {
+    renderGrid(blogs.slice(0, 3));
+} else if (document.body.classList.contains("index-html")) {
+    renderGrid(blogs.slice(0, 6));
+}
+
+
 
