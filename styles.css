@@ -3,7 +3,6 @@ body{
     width: 100%;
     max-width: 414px;
     margin: 0 auto;
-    background-color: #202020;
 }
 
 /* smartphone version */
@@ -27,24 +26,27 @@ nav, a, .logo{
 }
 
 .logo{
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 0.8469rem;
-    letter-spacing: -0.03em;
-    color: #0E0E0E;
     display: flex;
 }
 
-nav, a{
+.logo a{
+    color: #0E0E0E;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 0.846875m;
+    letter-spacing: -0.03;
+    line-height: 1.082;
+}
+
+nav, .menu a{
     font-family: "Source Sans 3", sans-serif;
-    font-size: 0.75rem;
+    font-size: .75rem;
     font-weight: 600;
     gap: 1.9375rem;
     color: #090909;
 }
 
 header img{
-    background-color: #0E0E0E;
     object-fit: cover;
 }
 
@@ -86,6 +88,7 @@ header img{
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.082em;
+    color: white;
 }
 
 .hero p{
@@ -95,7 +98,7 @@ header img{
 /* Grid */
 
 main{
-    background-color: white;
+    background-color: #FAFAFA;
 }
 
 .blog-grid{
@@ -275,27 +278,24 @@ header nav a {
     font-weight: 600;
 }
 
-
-
 /* texto nav */
 
-    nav a{
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 1rem;
+    .menu a{
+        font-size: 1rem;
     }
 
-    nav a:hover{
+    .menu a:hover{
         transform: scale(1.03);
         color:#505050;
-    }
-
-    .logo{
-        font-size: 1.2525rem;
     }
 
     .logo img{
         height: 2.140625rem;
         width: 2.140625rem;
+    }
+
+    .logo a{
+        font-size: 1.2525rem;
     }
 
 /* texto hero */
@@ -309,9 +309,11 @@ header nav a {
 
     .hero .inner-text{
      /* width: 657px; */
-     height: 10rem;
+     height: 11em;
      width: 41.0625rem;
-     padding: 0.625em;
+     padding: 0.625rem;
+     
+     
 
 
     background: rgba(255, 255, 255, 0.2);
@@ -331,8 +333,9 @@ header nav a {
     .hero h1{
     font-size: 2.5rem;
     letter-spacing: -0.03em;
+    display: flex;
     margin-bottom: 0.6081rem;
-    color: gradient() ;
+    color: gradient();
     }
 
     .gradient-text {
@@ -359,7 +362,7 @@ header nav a {
         padding-bottom: 4.5625rem;
     }
 
-    .blog p, h1{
+    .hero-html .blog, p h1{
        padding-left: 73px;
        padding-right: 73px;
     }
@@ -418,6 +421,73 @@ header nav a {
     .hero-html .blog-grid{
         padding-bottom: 10px;
     }
+
+
+/* about-html desktop size */
+
+
+.about-html hero{
+    display: flex;
+    background-color: #FAFAFA;
+    padding: 5.6875rem 3.3125rem 0 3.3125rem;
+    align-items: center;
+    
+}
+
+/* text */
+
+.about-html .about-hero h1{
+    color: #151515;
+    font-size: 2.25rem;
+    letter-spacing: -0.03em;
+    line-height: 1.082;
+    margin-bottom: 0.625rem;
+}
+
+.about-html .hero-text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.about-html .blog{
+    padding: 4.0625rem 7.5625rem 3.1875rem 7.5625rem;
+    
+    font-size: 20px;
+}
+
+.about-html .blog .blog-font{
+    font-size: 1rem;
+
+}
+
+.about-html .blog .bold{
+    font-size: 1.25rem;
+}
+
+/* image */
+
+.about-hero img{
+    border-radius: 50%;
+    display: flex;
+    margin-right: 33px;
+}
+
+.blog-html, .recent-posts{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.about-html .blog-grid{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.blog-html, .view-more{
+    display: none;
+}
 
 
 /* grid template */
