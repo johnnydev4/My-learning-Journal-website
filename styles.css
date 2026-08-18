@@ -3,9 +3,10 @@ body{
     width: 100%;
     max-width: 414px;
     margin: 0 auto;
+    background-color: #090909;
 }
 
-/* smartphone version */
+/* mobile screen version */
 
 header{
     display: flex;
@@ -46,6 +47,11 @@ nav, .menu a{
     color: #090909;
 }
 
+nav, .menu a:hover{
+    transform: scale(1.1);
+    color: #505050;
+}
+
 header img{
     object-fit: cover;
 }
@@ -66,29 +72,50 @@ header img{
     box-sizing: border-box;
     gap: 0.5rem;
     margin-bottom: 2.125rem;
+    cursor: pointer;
+    
 }
 
 .hero .subtext, h1, p, .date{
     font-family: "Source Sans 3", sans-serif;
     color: #FFFFFF;
     margin: 0;
+    
 }
+/* 
+liquid glass mobile hero */
+
+.inner-text{
+    padding: 0.3rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); /* necesario para Safari */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    }
 
 .hero .subtext{
     font-size: 1rem;
     font-weight: 400;
+    color: white;
+    padding: 0.3rem;
+    border-radius: 3%;
+    margin-top: 10px;
 }
 
 .hero .date{
     font-size: 0.75rem;
     font-weight: 400;
+    padding-top: 0.50em;
 }
 
 .hero h1{
     font-size: 2rem;
     font-weight: bold;
     line-height: 1.082em;
-    color: white;
+    color: rgb(244, 244, 244);
+
 }
 
 .hero p{
@@ -257,6 +284,80 @@ footer span{
     margin: 2.1875rem 0;
 }
 
+/* about html mobile screen */
+
+/* hero text and img */
+
+.father{
+    background-color: white;
+}
+
+.about-html .blog{
+    background-color: white;
+    padding-top: 0;
+}
+
+.about-html{
+    padding: 0 20px;
+}
+
+
+.about-html .about-hero img{
+    width: 182px;
+    height: 182px;
+    margin-bottom: 27px;
+    margin-top: 26px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.about-html .about-hero h1{
+    font-size: 2.1775rem;
+    line-height: 1.082em;
+    letter-spacing: -0.03em;
+    margin-bottom: 1rem;
+    padding-right: 42.78px;
+    margin-left: 20px;
+  
+    
+}
+
+.about-hero p{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 3.125rem;
+    font-size: 1rem;
+   
+}
+
+.about-html .about-hero .hide{
+    display: none;
+}
+
+
+.about-html .highlight{
+    background-color: #f7f7f7;
+    padding: 1.02rem;
+    border-radius: 2%;
+}
+
+
+.about-html .blog{
+    padding-bottom: 0;
+    margin-bottom: 2.8125rem;
+}
+
+.about-html .recent-posts p{
+    margin-bottom: 1.6875rem;
+}
+
+.about-html .view-more{
+    display: none;
+}
+
+.about-html .card{
+    margin-bottom: 3.5rem;
+}
 
 /* Desktop screen size */
 
@@ -428,7 +529,6 @@ header nav a {
 
 .about-html hero{
     display: flex;
-    background-color: #FAFAFA;
     padding: 5.6875rem 3.3125rem 0 3.3125rem;
     align-items: center;
     
@@ -452,17 +552,25 @@ header nav a {
 
 .about-html .blog{
     padding: 4.0625rem 7.5625rem 3.1875rem 7.5625rem;
-    
     font-size: 20px;
+}
+
+.blog-html, .highlight{
+    width: fit-content;
+    background-color: #f6f6f6;
+    padding: 1em 1.5em;
+    border-radius: 2%;
 }
 
 .about-html .blog .blog-font{
     font-size: 1rem;
+    
 
 }
 
 .about-html .blog .bold{
     font-size: 1.25rem;
+    
 }
 
 /* image */
@@ -483,6 +591,7 @@ header nav a {
 .about-html .blog-grid{
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .blog-html, .view-more{
