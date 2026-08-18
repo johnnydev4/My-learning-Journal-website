@@ -3,7 +3,6 @@ body{
     width: 100%;
     max-width: 414px;
     margin: 0 auto;
-    background-color: #090909;
 }
 
 /* mobile screen version */
@@ -374,7 +373,6 @@ footer span{
 
 @media (min-width: 1080px){
     body{
-        background-color: #000000;
         max-width: 1085px;
     }
 
