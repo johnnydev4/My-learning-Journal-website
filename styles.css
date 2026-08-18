@@ -34,8 +34,8 @@ nav, a, .logo{
     color: #0E0E0E;
     font-family: "Roboto";
     font-weight: bold;
-    font-size: 0.846875m;
-    letter-spacing: -0.03;
+    font-size: 0.846875rem;
+    letter-spacing: -0.03em;
     line-height: 1.082;
 }
 
@@ -59,9 +59,8 @@ header img{
 /* Hero section */
 
 .hero{
-    background-image: url("images/hero.jpg");
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -76,6 +75,16 @@ header img{
     
 }
 
+.hero-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
 .hero .subtext, h1, p, .date{
     font-family: "Source Sans 3", sans-serif;
     color: #FFFFFF;
@@ -86,13 +95,15 @@ header img{
 liquid glass mobile hero */
 
 .inner-text{
+    position: relative;
+    z-index: 1;
     padding: 0.3rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px); /* necesario para Safari */
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px rgba(254, 254, 255, 0.37);
     }
 
 .hero .subtext{
@@ -410,12 +421,11 @@ header nav a {
 
     .hero .inner-text{
      /* width: 657px; */
+     position: relative;
+     z-index: 1;
      height: 11em;
      width: 41.0625rem;
      padding: 0.625rem;
-     
-     
-
 
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
@@ -436,7 +446,6 @@ header nav a {
     letter-spacing: -0.03em;
     display: flex;
     margin-bottom: 0.6081rem;
-    color: gradient();
     }
 
     .gradient-text {
@@ -519,9 +528,10 @@ header nav a {
         display: none;
     }
 
-    .hero-html .blog-grid{
-        padding-bottom: 10px;
-    }
+
+
+
+    
 
 
 /* about-html desktop size */
@@ -590,8 +600,7 @@ header nav a {
 
 .about-html .blog-grid{
     padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 1rem;
+    padding-bottom: 1.3rem;
 }
 
 .blog-html, .view-more{
@@ -647,6 +656,3 @@ header nav a {
 }
 
 }
-
-   
-
