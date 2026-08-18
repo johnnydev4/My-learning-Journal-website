@@ -5,7 +5,7 @@ A responsive personal blog built from scratch with HTML, CSS, and vanilla JavaSc
 ![Homepage screenshot](./images/screenshot-home.png)
 <!-- Reemplaza con tu propio screenshot; súbelo a la carpeta images/ -->
 
-🔗 **Live demo:** [https://johnnydev4.github.io/my-learning-journal-website/](https://johnnydev4.github.io/my-learning-journal-website/)
+🔗 **Live demo:** [https://johnnydev4.github.io/my-learning-journal-website/](https://johnnydev4.github.io/My-learning-Journal-website/)
 <!-- Si lo publicas con GitHub Pages, pega el link aquí -->
 
 ## About
