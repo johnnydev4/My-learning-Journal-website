@@ -347,8 +347,9 @@ footer span{
 
 .about-html .highlight{
     background-color: #f7f7f7;
-    padding: 1.02rem;
+    padding: 1.06rem;
     border-radius: 2%;
+    margin-bottom: 40px;
 }
 
 
